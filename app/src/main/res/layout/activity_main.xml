@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/abuabu">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="640dp"
+        android:background="@color/biru2"
+        android:gravity="center"
+        android:id="@+id/navbar"
+        >
+
+        <TextView
+            android:id="@+id/nav1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Latihan 5"
+            android:textColor="@color/white"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_below="@+id/nav1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="Pemrograman Mobile"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="80dp"
+        android:gravity="center"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Konversi suhu"
+            android:textAllCaps="false"
+            android:background="@drawable/radius"
+            android:backgroundTint="@color/biru1"
+            android:textColor="@color/white"
+            android:id="@+id/latihan1"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diskon"
+            android:textAllCaps="false"
+            android:background="@drawable/radius"
+            android:backgroundTint="@color/biru1"
+            android:textColor="@color/white"
+            android:id="@+id/latihan2"
+            android:layout_below="@+id/latihan1"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="luas dan Volume"
+            android:textAllCaps="false"
+            android:background="@drawable/radius"
+            android:backgroundTint="@color/biru1"
+            android:textColor="@color/white"
+            android:id="@+id/latihan3"
+            android:layout_below="@+id/latihan2"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ganjil genap"
+            android:textAllCaps="false"
+            android:background="@drawable/radius"
+            android:backgroundTint="@color/biru1"
+            android:textColor="@color/white"
+            android:id="@+id/latihan4"
+            android:layout_below="@+id/latihan3"
+            android:layout_marginTop="20dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="640dp"
+        android:gravity="center"
+        android:id="@+id/credit">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="- nawafakbar -"
+            android:textSize="15sp"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".konversi_suhu"
+    android:background="@color/abuabu">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="640dp"
+        android:background="@color/biru2"
+        android:gravity="center"
+        android:id="@+id/navbar"
+        >
+
+        <TextView
+            android:id="@+id/nav1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Latihan 5"
+            android:textColor="@color/white"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_below="@+id/nav1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="Pemrograman Mobile"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="55dp"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Celsius"
+            android:textColor="@color/biru2"
+            android:id="@+id/text"
+            android:textSize="18sp"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@drawable/radius"
+            android:backgroundTint="@color/biru1"
+            android:layout_below="@+id/text"
+            android:hint="inputkan angka"
+            android:textColor="@color/white"
+            android:textColorHint="@color/abuabu"
+            android:layout_marginTop="10dp"
+            android:id="@+id/input"
+            android:inputType="number"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input"
+            android:layout_marginTop="10dp"
+            android:paddingEnd="25dp"
+            android:paddingStart="25dp"
+            android:text="Fahrenheit"
+            android:textAllCaps="false"
+            android:background="@drawable/radius"
+            android:backgroundTint="@color/biru2"
+            android:textColor="@color/white"
+            android:id="@+id/fahrenheit"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input"
+            android:layout_marginTop="10dp"
+            android:text="kelvin"
+            android:paddingStart="37dp"
+            android:paddingEnd="37dp"
+            android:textAllCaps="false"
+            android:background="@drawable/radius"
+            android:backgroundTint="@color/biru2"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@+id/fahrenheit"
+            android:layout_marginStart="12dp"
+            android:id="@+id/kelvin"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fahrenheit"
+            android:layout_marginTop="10dp"
+            android:paddingEnd="25dp"
+            android:paddingStart="25dp"
+            android:text="Reamur"
+            android:textAllCaps="false"
+            android:background="@drawable/radius"
+            android:backgroundTint="@color/biru2"
+            android:textColor="@color/white"
+            android:id="@+id/reamur"
+            />
+
+        <TextView
+            android:id="@+id/txthasil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fahrenheit"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:paddingStart="38dp"
+            android:paddingEnd="38dp"
+            android:text="Hasilnya"
+            android:textAllCaps="false"
+            android:background="@drawable/radius"
+            android:backgroundTint="@color/biru1"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@+id/reamur"
+            android:layout_marginStart="12dp"
+            />
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="640dp"
+        android:gravity="center"
+        android:id="@+id/credit">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="- nawafakbar -"
+            android:textSize="15sp"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
